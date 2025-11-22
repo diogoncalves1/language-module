@@ -1,5 +1,4 @@
 <?php
-
 namespace Modules\Language\Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -11,6 +10,8 @@ class LanguageDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            LanguageSeeder::class,
+        ]);
     }
 }
