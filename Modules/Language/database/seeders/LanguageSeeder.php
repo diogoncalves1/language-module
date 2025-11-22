@@ -2,16 +2,15 @@
 namespace Modules\Language\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\Language\Entities\Language;
 
-class LanguageDatabaseSeeder extends Seeder
+class LanguageSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $this->call([
-            LanguageSeeder::class,
-        ]);
+        Language::factory(2)->create();
     }
 }
